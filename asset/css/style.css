@@ -1,0 +1,428 @@
+:root{
+    --darkViolet: rgb(45, 38, 64);
+    --graYishBlue: rgb(149, 169, 198);
+    --veryDarkViolet: rgb(43, 39, 47);
+    --darkGrayishViolet:  rgb(131, 125, 135);
+    --white: rgb(250, 250, 250); 
+}
+@font-face {
+    font-family: "headerFont";
+    src: url("../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: "karla";
+    src: url("../fonts/Karla/Karla-VariableFont_wght.ttf");
+}
+
+/* for debugging */
+.border {
+    outline: 2px solid black;
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "karla";
+}
+
+
+/* Configuration css */
+.headerText {
+    font-family: "headerFont";
+    font-weight: 700;
+}
+
+.padding-all {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.my-max-width {
+    max-width: 375px;
+    margin: auto;
+}
+
+
+
+/* ==================================================== */
+/* For mobiles  */
+/* The nav bar section for mobiles */
+.nav-bar-section {
+    background: var(--white);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.nav-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn {
+    display: none;
+}
+
+
+.desktop-nav {
+    display: none;
+    list-style-type: none;
+}
+
+.mobile-nav-section {
+    background: var(--darkViolet);
+    color: var(--white);
+    padding-top: 20px;
+    height: 88.2vh;
+    display: none;
+    flex-direction: column;
+    align-items: space-between;
+    overflow: hidden;
+}
+
+#btn:checked + .mobile-nav-section {
+    display: flex;
+}
+
+.mobile-nav-container {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-nav-container > li {
+    font-weight: 700;
+    padding: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mobile-nav-container > li:last-child {
+    border: 2px solid var(--white);
+}
+.mobile-nav-container > li:last-child:hover{
+
+    color: var(--darkViolet);
+    background-color: var(--white);
+    transition: ease-in-out .3s;
+}
+.mobile-image-nav {
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* ==================================== */
+/* overall design */
+
+.header-image img{
+    width: 100%;
+}
+.header-container >img {
+    display: none;
+}
+.intro{
+    padding: 4rem .8rem;
+    background-color: var(--darkViolet);
+    margin-top: -0.3rem;
+    color: var(--white);
+    text-align: center;
+    background-image: url(/images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
+.intro p{
+    padding: 1.2rem 0px;
+    line-height: 1.4rem;
+}
+
+.intro h2 button{
+    background-color: transparent;
+    border: 2px solid var(--white);
+    padding: .5rem 1.2rem;
+    color: var(--white);
+}
+.intro h2 button:hover{
+    color: var(--darkViolet);
+    background-color: var(--white);
+    transition: ease-in-out .3s;
+}
+.body-wrapper{
+    text-align: center;
+    padding: 4rem 2rem;
+}
+.cell{
+    padding: 1.4rem 0px;
+}
+.cell h3{
+    padding: 1rem 0px;
+}
+.different-wrapper{
+    padding: 2.4rem 0px;
+}
+.line{
+    border: 1px solid rgba(0, 0, 0, 0.353);
+    width: 8rem;
+    margin:0px auto 2rem auto;
+}
+.more-work__wrapper{
+    width: 85%;
+    background-color: var(--darkViolet);
+    background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position:top right;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--white);
+
+}
+.more-work__wrapper h2 button{
+    background-color: transparent;
+    border: 2px solid var(--white);
+    padding: .5rem 1.2rem;
+    color: var(--white);
+    margin-top: 2rem;
+}
+.more-work__wrapper h2 button:hover{
+    color: var(--darkViolet);
+    background-color: var(--white);
+    transition: ease-in-out .3s;
+}
+.footer{
+
+    background: url(/images/bg-pattern-footer-mobile.svg) no-repeat ;
+}
+.footer__main{
+    padding: 3rem 0px 1rem 0px;
+    margin-top: 4rem;
+    text-align: center;
+}
+.footer__main img{
+    padding: 1.2rem .4rem;
+}
+.footer-line{
+    border: 1px solid rgba(0, 0, 0, 0.238);
+    width: 85%;
+    margin: auto;
+}
+.footer__body{
+    text-align: center;
+}
+.footer-cell h4{
+    padding: 2rem 0px 1.2rem 0px;
+    color:rgba(0, 0, 0, 0.418) ;
+    text-transform:uppercase ;
+}
+.footer-cell ul li{
+    padding: .3rem;
+    list-style-type: none;
+}
+.footer-cell ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 1rem 0px;
+    color: rgba(0, 0, 0, 0.694);
+    font-weight: 600;
+}
+
+
+
+/* =========================================================== */
+/* tablet screens */
+
+
+
+
+@media (min-width: 481px) {
+    .my-max-width {
+        max-width: 675px;
+        margin: auto;
+    }
+
+
+    .padding-all {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .more-work__wrapper{
+        background-image: url(/images/bg-pattern-how-we-work-desktop.svg) ;
+         background-repeat: no-repeat;
+         background-position:top right;
+    }
+    .offers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .cell{
+        padding: 1rem 2rem;
+    }
+
+    .footer__body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0px 0px 2rem 0px;
+    }
+    
+}
+
+
+
+
+
+/* ========================================================= */
+/* laptop screens */
+
+@media (min-width: 800px) {
+    .my-max-width {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+
+    .padding-all {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        list-style-type: none;
+        padding: .8rem 0px;
+    }
+
+    .desktop-nav > li {
+        margin: 0px 20px;
+        text-transform: uppercase;
+        padding: 10px 20px;
+    }
+    .desktop-nav li:hover{
+    color: white;
+    background-color: var(--darkViolet);
+    transition:ease-in-out .3s;
+    }
+
+    .desktop-nav > li:last-child {
+        border: 1px solid black;
+    }
+
+    .mobile-nav-section {
+        display: none;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 4rem 3rem 5rem 3rem;
+        background-color: var(--darkViolet);
+        position: relative;
+    }
+
+.header-container >img {
+    display: block;
+}
+    .header-image{
+        position: absolute;
+    }
+    .header-right__svg{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 16rem;
+        z-index: 10;
+    }
+    .body-left__svg{
+        position: absolute;
+        width: 12%;
+        top: 20rem;
+        left: 0;
+    }
+    .intro{
+        background-image: none;
+        background-color: transparent;
+        padding: 0px 2rem 0px 0px;
+        /* width: -100%; */
+    }
+    .intro-text{
+        width: 48%;
+        text-align: left;
+    }
+    .intro-line{
+        border: 1px solid rgba(117, 115, 115, 0.478);
+        width: 8rem;
+        margin:0px 0px 2rem 0px;
+    }
+    
+    .line{
+        margin: 1rem 0px 4rem 0px;
+    }
+    .different-wrapper{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 2rem 1.4rem;
+
+    }
+    .offers{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        text-align: left;
+    }
+    .more-work__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+    .footer-wrapper{
+        background-color: var(--white);
+
+    }
+    .footer{
+        max-width: 1400px;
+        margin: auto;
+        background: url(/images/bg-pattern-footer-desktop.svg) no-repeat;
+        background-position: -10% -10%;
+        
+    }
+    .footer__main{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 6rem;
+    }
+    .footer__body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0px 0px 2rem 0px;
+        background-color: transparent;
+
+    }
+    .footer__body div{
+        background-color: transparent;
+    }
+    .footer-line{
+        background-color: transparent;
+    }
+}
+
+@media (min-width: 980px){
+    .header-container{
+        font-size: 20px;
+        padding: 5rem 3rem 6rem 3rem;
+    }
+}
