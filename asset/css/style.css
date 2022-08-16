@@ -136,7 +136,7 @@ body {
     margin-top: -0.3rem;
     color: var(--white);
     text-align: center;
-    background-image: url(/images/bg-pattern-intro-left-mobile.svg);
+    background-image: url(images/bg-pattern-intro-left-mobile.svg);
     background-repeat: no-repeat;
     width: 100%;
     
@@ -178,7 +178,7 @@ body {
 .more-work__wrapper{
     width: 85%;
     background-color: var(--darkViolet);
-    background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
+    background-image: url(images/bg-pattern-how-we-work-mobile.svg);
     background-repeat: no-repeat;
     background-position:top right;
     padding: 4rem 2rem;
@@ -200,7 +200,7 @@ body {
 }
 .footer{
 
-    background: url(/images/bg-pattern-footer-mobile.svg) no-repeat ;
+    background: url(images/bg-pattern-footer-mobile.svg) no-repeat ;
 }
 .footer__main{
     padding: 3rem 0px 1rem 0px;
@@ -256,7 +256,7 @@ body {
         padding-right: 1rem;
     }
     .more-work__wrapper{
-        background-image: url(/images/bg-pattern-how-we-work-desktop.svg) ;
+        background-image: url(images/bg-pattern-how-we-work-desktop.svg) ;
          background-repeat: no-repeat;
          background-position:top right;
     }
@@ -396,7 +396,7 @@ body {
     .footer{
         max-width: 1400px;
         margin: auto;
-        background: url(/images/bg-pattern-footer-desktop.svg) no-repeat;
+        background: url(images/bg-pattern-footer-desktop.svg) no-repeat;
         background-position: -10% -10%;
         
     }
